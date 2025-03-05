@@ -1,0 +1,369 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rockwell", sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: black;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Align logo to left, nav to right */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Ensures logo and text are centered vertically */
+}
+
+.logo img {
+    width: 60px; /* Adjust the logo size */
+    height: auto;
+    margin-right: 10px;
+}
+
+.gym-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center; /* Ensures text aligns with logo */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(255, 255, 0);
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links a:hover {
+    color: yellow; /* Changes color on hover */
+}
+
+.menu-toggle {
+    display: none; /* Hide for desktop */
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.difference {
+    background: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.difference h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.feature {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 180px;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.legacy {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+.legacy h2 {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.legacy p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: "chalkboard";
+}
+
+.feature i {
+    font-size: 30px;
+    color: #f7b731;
+    margin-bottom: 10px;
+}
+
+.gym-timings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.gym-timings-container h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gym-timings-container p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.timing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+}
+
+.timing-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.timing-card:hover {
+    transform: scale(1.05);
+}
+
+.timing-card i {
+    font-size: 24px;
+    color: #f7b731;
+    margin-bottom: 10px;
+}
+
+.timing-card span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.timing-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.unique-features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.unique-features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: #f8f9fa;
+}
+
+.unique-features-container h2 {
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 80%;
+    justify-content: center;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card i {
+    font-size: 24px;
+    color: #f7b731;
+    margin-bottom: 10px;
+}
+
+.feature-card span {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+}
+footer {
+    background-color: #111;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-section {
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    color: yellow;
+    margin-bottom: 15px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section ul li a:hover {
+    color: yellow;
+}
+
+.footer-section input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    background-color: yellow;
+    color: black;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-section button:hover {
+    background-color: white;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: white;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: yellow;
+}
+
+.footer-bottom {
+    background-color: #000;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
